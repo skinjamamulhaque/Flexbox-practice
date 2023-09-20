@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#leftcontainer{
+    width: 40%;
+    height: 100%;
+    background-color: rgba(250, 235, 215, 0.548);
+}
+
+#leftcontainer #navbar{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+#leftcontainer #navbar #leftnavbar {
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+
+
+#leftcontainer #navbar #leftnavbar i{
+    color: black;
+    font-size: 20px;
+    font-weight: 00;
+    
+}
+#leftcontainer #navbar #rightnavbar{
+    margin-right: 50px;
+}
+#leftcontainer #navbar #rightnavbar a{
+    text-decoration: none;
+    color: #F08E01;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 30px;
+  
+    
+}
+
+#leftcontainer #navbar #rightnavbar i{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+#bodycontent{
+    padding: 100px 100px;
+    margin-top: 100px;
+}
+
+#bodycontent h1{
+    font-size: 190px;
+    font-weight: 1000;
+}
+
+#bodycontent p{
+    font-size:20px ;
+    margin-top: 20px;
+    line-height: 30px;
+    opacity: .6;
+}
+
+#bodycontent button{
+    margin-top: 25px;
+    padding: 10px 30px 10px 30px;
+    border:none;
+    border-radius: 10px;
+    background-color: #F08E01;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    
+}
+
+#rightcontainer{  
+    width: 60%;
+    height: 100%;   
+}
+
+#topblock{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#leftblock{
+    width: 50%;
+    height:100%;
+    background-image: url(https://images.pexels.com/photos/5945625/pexels-photo-5945625.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: top;
+    background-size: cover;
+}
+#rightblock{
+    width: 50%;
+    height:100%;
+    background-image: url(https://images.pexels.com/photos/7479375/pexels-photo-7479375.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
+}
+
+#bottomblock{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://images.pexels.com/photos/7655893/pexels-photo-7655893.jpeg);
+    background-position: center;
+    background-size:cover;
+}
+
+@media (max-width:500px){
+    #main{
+        flex-direction: column;
+    }
+
+    #main #leftcontainer{
+        width: 100%;
+    }
+}
